@@ -2,3 +2,5 @@ import math
 list = input int("How many numbers should we print?")
 fizz = input int("For numbers of what multiple should we print 'fizz'?")
 buzz = input int("For numbers of what multiple should we print 'buzz'")
+for list print "numbers 1 through that number"
+if fizz = "
