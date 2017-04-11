@@ -1,15 +1,13 @@
 import math
-list = int (input("How many numbers should we print?"))
-fizz = int (input("For numbers of what multiple should we print 'fizz'?"))
-buzz = int (input("For numbers of what multiple should we print 'buzz'"))
-fizzbuzz = (fizz * buzz):
-    print "numbers that are multiples of both numbers"
-for i in xrange(1, 101):
-    if i % fizzbuzz == 0:
-        print "fizzbuzz"
-    elif i % fizz == 0:
-        print "fizz"
-    elif i % buzz == 0:
-        print "buzz"
-    else:
-        print i
+numberprint = int(input("How many numbers should we print? "))
+fizz = int(input("For multiples of what number shall we print Fizz? "))
+buzz = int(input("For multiples of what number shall we print Buzz? "))
+for i in range(1,numberprint+1):
+    x = str(i)
+if 0 == i%fizz and 0 == i%buzz:
+     x = "FizzBuzz"
+elif 0 == i%fizz:
+    x = "Fizz"
+elif 0 == i%buzz:
+    x = "Buzz"
+print (x)
